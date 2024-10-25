@@ -6,6 +6,11 @@ public class CannonBarrel : MonoBehaviour
 {
     float angle = 0;
 
+    // Cannonball prefabs
+    public GameObject cb1;
+    public GameObject cb2;
+    public GameObject cb3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +33,10 @@ public class CannonBarrel : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 0, angle - 90);
         }
+    }
+
+    void OnFire1()
+    {
+
     }
 }
